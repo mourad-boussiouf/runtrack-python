@@ -6,4 +6,4 @@ for column in root.findall('.//column'):
     if column.get('name') == 'domain':
         print(column.text)
         count += 1
-print("total de noms de domaine enregistrés dans le xml:",count)
+print("total d'EXTENSIONS DE DOMAINES(sans préciser si différents ou non merci les sujets à l'arrache) enregistrés dans le xml:",count)
