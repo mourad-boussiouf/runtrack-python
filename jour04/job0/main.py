@@ -1,9 +1,7 @@
-import time
 next_factor=2
 operationString="1"
 
 def factorialRecursion(user_input,operationString,next_factor):
-    time.sleep(0.3)
     userInt=int(user_input)
     operationString+="*"+str(next_factor)
     print("operationString",operationString)
@@ -12,13 +10,12 @@ def factorialRecursion(user_input,operationString,next_factor):
         return
     elif userInt==next_factor or userInt==1:
         print("La factorielle de "+user_input+" est ",eval(operationString))
+        integer2 = int('6')
+        integer1 = int('3')
+        print(int(integer2*integer1))
         return
     elif userInt>next_factor:
         next_factor=next_factor+1
-        print("recurs launch")
-        print("userInt",userInt)
-        print("operationString",operationString)
-        print("next_factor",next_factor)
         factorialRecursion(user_input,operationString,next_factor)
 
 
