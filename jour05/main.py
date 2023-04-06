@@ -5,7 +5,7 @@ from pygame.locals import *
 
 WINDOW_SIZE = 600
 CELL_SIZE = WINDOW_SIZE // 3
-
+#cellule
 class TicTacToe:
     def __init__(self, game):
         self.game = game
@@ -43,3 +43,11 @@ class Game:
 if __name__=='__main__':
     game = Game()
     game.run()
+
+def get_field():
+    field = []
+    for i in range(3):
+        field.append([])
+        for j in range(3):
+            field[i].append(' ')
+    return field
