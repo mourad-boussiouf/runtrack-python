@@ -26,12 +26,14 @@ class Game:
         self.clock = pg.time.Clock()
         self.tictactoe = TicTacToe(self)
 
+
     def check_events(self):
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 pg.quit()
                 sys.exit()
 
+    #boucle infini du jeu
     def run(self):
         while True:
             self.check_events()
